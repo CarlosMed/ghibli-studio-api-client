@@ -1,27 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Nav from './components/Nav/Nav';
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+    return <>
+      <h3 className="title">
+        Studio <br /> Ghibli
+      </h3>
+      <Nav />
+      <ul className="content">
+        <li className="content__card show">
+          <img src="https://source.unsplash.com/random?v=1" alt="" />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </li>
+        <li className="content__card">
+          <img src="https://source.unsplash.com/random?v=2" alt="" />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </li>
+        <li className="content__card">
+          <img src="https://source.unsplash.com/random" alt="" />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </li>
+      </ul>
+    </>;
   }
 }
 
